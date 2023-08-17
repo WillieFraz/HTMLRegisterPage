@@ -1,16 +1,11 @@
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-
-namespace French.Models.RecipeModels;
-
-    public class RecipeDetails
+namespace French.Models.Recipe
+{
+    public class RecipeDetail
     {
+        public int RecipeId { get; set; }
         public string Title { get; set; } = string.Empty;
-
         public string Description { get; set; } = string.Empty;
 
         public string Instruction { get; set; } = string.Empty;
-
-        
     }
+}
